@@ -136,7 +136,7 @@ cancer_mama <- Analisis %>% group_by(gen) %>% mutate(row = row_number()) %>%
   select(-row)
 
 descr(cancer_mama) %>% tab_df(title = "Descripción estadística del cáncer de mama y su nivel de expresion de los diferentes genes",
-                              file = "mRNA_expr_summary.doc") 
+                              file = "C:/Users/HP/Documents/GBI6_Examenfinal1.0/results/mRNA_expr_summary.doc") 
 head(cancer_mama)
 
 ```
@@ -147,9 +147,17 @@ head(cancer_mama)
 ```{tex}
 # Escriba aquí su interpretación 
 
+# En base a la resolucion de los Ejercicios 1.1 haste 1.5 se puede observar en la tabla
+# de resumen de los diferentes tipos de enfermedades y su nivel de expresion segun sus genes.
+# Además, de los cuales podemos contemplar:
+# BRCA -> Carcionoma invasivo de mama
+# KIPAN -> Cohorte Pan-riñón 
+# KIRP -> Atlas del Genoma del Cáncer Carcinoma renal de células papilares
+# LUSC -> Carcinoma de células escamosas de pulmón
+# Existe la variancion de los datos, en funcion de los promedio, las obervaciones, tambien
+# las diferentes variasbles en cada tabla.
+
 ```
-
-
 
 ## **Pregunta 2 VISUALIZACION DE DATOS  [5 PUNTOS]**
 

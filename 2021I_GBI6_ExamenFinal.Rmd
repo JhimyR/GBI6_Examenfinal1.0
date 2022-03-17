@@ -83,7 +83,8 @@ getwd()
 
 ### [0.5 PUNTOS] 1.2. Cargue la data "mRNA_expr.csv"
 ```{r data}
-
+library(readr)
+df <- read_csv("C:/Users/HP/Documents/GBI6_Examenfinal1.0/data/mRNA_expr.csv")
 
 ```
 

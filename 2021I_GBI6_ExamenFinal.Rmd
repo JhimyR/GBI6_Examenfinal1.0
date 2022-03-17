@@ -92,7 +92,17 @@ df <- read_csv("C:/Users/HP/Documents/GBI6_Examenfinal1.0/data/mRNA_expr.csv")
 
 ```{r funcion_long}
 # Escriba aquí la función long_df
+# Antes de iniciar instalaremos el paquete tidyverse justamente nos ayuda a la manipulación, importación, exploración y visualización de datos y que se utiliza exhaustivamente en ciencia de datos.
+library(tidyr)
+library(dplyr)
 
+# Nombraremos a la función de nombre long_df
+long_df <- function(df) {
+  df$dataset <- as.factor(df$dataset)
+  df_l <- gather(df, gen, expresion_level, GATA3, PTEN, XBP1, ESR1, MUC1, FN1, GAPDH, factor_key=TRUE)
+  df_l2 <- select(df_l, -bcr_patient_barcode)
+  return (df_l2)
+  }
 
 ```
 

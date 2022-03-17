@@ -86,6 +86,7 @@ getwd()
 library(readr)
 df <- read_csv("C:/Users/HP/Documents/GBI6_Examenfinal1.0/data/mRNA_expr.csv")
 
+head(df)
 ```
 
 ### [1 PUNTO] 1.3 Cree una función de nombre ```long_df``` para transformar la data ```df``` de la forma wide a long.
@@ -103,7 +104,7 @@ long_df <- function(df) {
   df_l2 <- select(df_l, -bcr_patient_barcode)
   return (df_l2)
   }
-
+head(long_df)
 ```
 
 
@@ -120,6 +121,7 @@ df_long <- long_df(df)
 
 Analisis <- df_long %>% group_by(gen)
 
+head(Analisis)
 ```
 
 ### [0.5 PUNTOS] 1.5 A partir de la data ```df_long```, genere un **Descriptive table** (librería ```sjPlot```) y guárdelo en el subdirectorio "result"  con el nombre **mRNA_expr_summary.doc** (previamente debe seleccionar las celdas adecuadas con funciones de la librería ```dplyr``` en conjunto con el operador ```%>%```). 
@@ -135,6 +137,8 @@ cancer_mama <- Analisis %>% group_by(gen) %>% mutate(row = row_number()) %>%
 
 descr(cancer_mama) %>% tab_df(title = "Descripción estadística del cáncer de mama y su nivel de expresion de los diferentes genes",
                               file = "mRNA_expr_summary.doc") 
+head(cancer_mama)
+
 ```
 
 ### [0.5 PUNTOS] 1.6 Interprete los resultados de la tabla resultante de la sección 1.5. 

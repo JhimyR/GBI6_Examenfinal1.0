@@ -3,18 +3,11 @@ title: "GBI6 - BIOINFORMÁTICA"
 subtitle: "EXAMEN FINAL"
 author: 'Siquihua Jhimy'
 date: "17/03/2022"
-output:
-  html_document:
-    highlight: espresso
-    theme: paper
-    toc: yes
-    toc_depth: 4
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
+output: html_document
+
 ---
 
-![](./img/ikiam.png)
+
 
 **Bienvenidos al examen final de GBI6 - Bioinformática.**
 
@@ -244,8 +237,6 @@ graficoscancer <- list (
     tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %>%
     select(-row)
 )
-plots_cancer
-
 
 ```
 

@@ -382,6 +382,11 @@ ggsave("C:/Users/HP/Documents/GBI6_Examenfinal1.0/results/regresion11.pdf", widt
 ```{tex}
 # Esciba aquí su intepretación
 
+# Segun los resultados obtenido en al figura del boxplot3.png se observó una distribucion con valores # a los normales. Además, resultaods negativos o puntos en GATA3, con diferencias en los quintiles.
+# como seunda parte de la grafica de regresion lineal , se pudo observar los puntos de dispersión, y
+# tambien los niveles de expresion de genes era muy diferenciada entre los canceres 6, pero con mas 
+# frecuencias en los canceres. Se puede observar los niveles de expresión del gen PTEN (gen1) 
+# aunmenta, en relación al gen GAPDH.
 
 ```
 

@@ -371,7 +371,7 @@ expresion_gen_reg <- function (gen) {
 
 graficos_cancer <- expresion_gen_reg("GATA3")
 graficos_cancer[[5]][[2]]
-ggsave("C:/Users/Usuario/Desktop/examen_final/GBI6_ExamenFinal/results/regresion11.pdf", width = 5, height = 9, dpi = 300)
+ggsave("C:/Users/HP/Documents/GBI6_Examenfinal1.0/results/regresion11.pdf", width = 5, height = 10, dpi=300)
 
 
 ```
